@@ -6,10 +6,16 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        if (args.length < 1) {
+            System.out.println("Enter animals.txt file path as first argument");
+
+            return;
+        }
+        String filePath = args[0];
         Random random = new Random();
         ArrayList<AbstractAnimal> animals = null;
 
-        try (FileReader fr = new FileReader("animals.txt")) {
+        try (FileReader fr = new FileReader(filePath)) {
             animals = initializeAnimals(fr);
         } catch (IOException e) {
             e.printStackTrace();
