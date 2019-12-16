@@ -6,12 +6,13 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        if (args.length < 1) {
-            System.out.println("Enter animals.txt file path as first argument");
+        if (args.length < 2) {
+            System.out.println("Enter animals.txt file path as first argument and output.txt file path as second argument");
 
             return;
         }
         String filePath = args[0];
+        String outputFilePath = args[1];
         Random random = new Random();
         ArrayList<AbstractAnimal> animals = null;
 
@@ -35,7 +36,7 @@ public class Main {
                 .append(animal.getFoodType()).append(" ")
                 .append(animal.getFoodCount()).append("\n"));
 
-        writeInfo("animals2.txt", sb.toString());
+        writeInfo(outputFilePath, sb.toString());
 
         for (AbstractAnimal animal: animals) {
             System.out.println("Name: " + animal.getName() + " Food count: " + animal.getFoodCount() + " Food type: " + animal.getFoodType());
