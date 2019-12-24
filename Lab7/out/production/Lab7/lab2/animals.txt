@@ -1,0 +1,8 @@
+Omnivorous test 2
+Omnivorous a 4
+Predatory b 5
+Herbivorous f 2
+Predatory j 9
+Predatory fdghj 3
+Predatory pppp 5
+Herbivorous fff 4
