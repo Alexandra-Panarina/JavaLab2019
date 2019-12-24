@@ -1,7 +1,6 @@
 package lab5;
 
 import java.io.IOException;
-import java.util.Properties;
 
 public class Main {
 

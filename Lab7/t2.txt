@@ -6,3 +6,6 @@
 5 fdghj 2 3
 3 f 1 2
 0 test 0 2
+
+hgjtyjyt
+edit ./t2.txt

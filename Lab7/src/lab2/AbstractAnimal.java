@@ -6,13 +6,11 @@ public abstract class AbstractAnimal implements Comparable<AbstractAnimal> {
     private static int totalIds = 0;
     public int id;
     public String name;
-    // public int foodType;
     public int foodCount;
 
     AbstractAnimal(String name, int foodCount) {
         this.id = totalIds++;
         this.name = name;
-        // this.foodType = foodType;
         this.foodCount = foodCount;
     }
 
